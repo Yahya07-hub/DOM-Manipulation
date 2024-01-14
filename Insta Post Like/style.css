@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.cursor {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 999;
+}
+.post {
+  width: 300px;
+  height: 460px;
+  background-color: #f5f5f5;
+}
+.post .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  gap: 10px;
+}
+.post .top img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid purple;
+  padding: 1px;
+}
+.post .photo {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+.post .photo img {
+  width: 100%;
+  height: 100%;
+}
+.post .photo i {
+  color: #fff;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.post .actions {
+  padding: 6px 10px;
+}
+.post .actions i {
+  font-size: 23px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.post .actions .ri-bookmark-line {
+  float: right;
+}
